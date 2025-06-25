@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Moet Chaincoin ($MOET) - Where Luxury Pops & Blockchain Never Stops</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+
+        :root {
+
+            --dark-bg: #0f0f23;
+
+            --royal-purple: #3a0ca3;
+
+            --electric-blue: #00ccff;
+
+            --electric-pink: #ff00c8;
+
+            --gold: #d4af37;
+
+            --light-gold: #f5e8c9;
+
+            --white: #ffffff;
+
+            --text-light: #f0f0f0;
+
+            --text-gray: #a0a0a0;
+
+        }
+
+        
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+        
+
+        body {
+
+            font-family: 'Raleway', sans-serif;
+
+            background: linear-gradient(135deg, var(--dark-bg) 0%, var(--royal-purple) 100%);
+
+            color: var(--text-light);
+
+            overflow-x: hidden;
+
+            position: relative;
+
+            min-height: 100vh;
+
+        }
+
+        
+
+        body::before {
+
+            content: "";
+
+            position: fixed;
+
+            top: 0;
+
+            left: 0;
+
+            width: 100%;
+
+            height: 100%;
+
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><circle cx="10" cy="10" r="1" fill="%23d4af37" opacity="0.7"/><circle cx="30" cy="30" r="0.7" fill="%23d4af37" opacity="0.5"/><circle cx="50" cy="70" r="0.5" fill="%23d4af37" opacity="0.3"/><circle cx="90" cy="20" r="0.8" fill="%23d4af37" opacity="0.6"/><circle cx="70" cy="90" r="1.2" fill="%23d4af37" opacity="0.4"/></svg>');
+
+            z-index: -1;
+
+            pointer-events: none;
+
+            animation: glitter 3s infinite ease-in-out;
+
+        }
+
+        
+
+        @keyframes glitter {
+
+            0%, 100% { opacity: 0.3; }
+
+            50% { opacity: 0.8; }
+
+        }
+
+        
+
+        .coin-animation {
+
+            position: absolute;
+
+            width: 20px;
+
+            height: 20px;
+
+            background: radial-gradient(circle, var(--gold) 0%, transparent 70%);
+
+            border-radius: 50%;
+
+            pointer-events: none;
+
+            z-index: 10;
+
+            box-shadow: 0 0 15px var(--gold);
+
+        }
+
+        
+
+        .container {
+
+            max-width: 1200px;
+
+            margin: 0 auto;
+
+            padding: 0 20px;
+
+        }
+
+        
+
+        /* Header Styles */
+
+        header {
+
+            padding: 20px 0;
+
+            position: fixed;
+
+            width: 100%;
+
+            top: 0;
+
+            z-index: 1000;
+
+            background: rgba(15, 15, 35, 0.8);
+
+            backdrop-filter: blur(10px);
+
+            border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+
+        }
+
+        
+
+        .header-container {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+        }
+
+        
+
+        .logo {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+        }
+
+        
+
+        .logo-icon {
+
+            font-size: 2rem;
+
+            color: var(--gold);
+
+        }
+
+        
+
+        .logo-text {
+
+            font-family: 'Playfair Display', serif;
+
+            font-size: 1.8rem;
+
+            font-weight: 700;
+
+            background: linear-gradient(90deg, var(--gold), var(--light-gold));
+
+            -webkit-background-clip: text;
+
+            background-clip: text;
+
+            -webkit-text-fill-color: transparent;
+
+        }
+
+        
+
+        .nav-menu {
+
+            display: flex;
+
+            gap: 30px;
+
+        }
+
+        
+
+        .nav-link {
+
+            text-decoration: none;
+
+            color: var(--text-light);
+
+            font-weight: 600;
+
+            position: relative;
+
+            padding: 5px 0;
+
+            transition: all 0.3s ease;
+
+        }
+
+        
+
+        .nav-link::after {
+
+            content: '';
+
+            position: absolute;
+
+            bottom: 0;
+
+            left: 0;
+
+            width: 0;
+
+            height: 2px;
+
+            background: var(--gold);
+
+            transition: width 0.3s ease;
+
+        }
+
+        
+
+        .nav-link:hover {
+
+            color: var(--gold);
+
+        }
+
+        
+
+        .nav-link:hover::after {
+
+            width: 100%;
+
+        }
+
+        
+
+        .wallet-btn {
+
+            background: linear-gradient(90deg, var(--electric-pink), var(--electric-blue));
+
+            color: white;
+
+            border: none;
+
+            padding: 10px 20px;
+
+            border-radius: 30px;
+
+            font-weight: 700;
+
+            cursor: pointer;
+
+            transition: all 0.3s ease;
+
+            box-shadow: 0 0 15px rgba(255, 0, 200, 0.5);
+
+        }
+
+        
+
+        .wallet-btn:hover {
+
+            transform: translateY(-3px);
+
+            box-shadow: 0 0 25px rgba(255, 0, 200, 0.8);
+
+        }
+
+        
+
+        /* Hero Section */
+
+        .hero {
+
+            padding: 150px 0 100px;
+
+            text-align: center;
+
+            position: relative;
+
+            overflow: hidden;
+
+        }
+
+        
+
+        .bottle-animation {
+
+            width: 250px;
+
+            height: 500px;
+
+            margin: 0 auto 30px;
+
+            position: relative;
+
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 200"><path d="M40,10 C45,5 55,5 60,10 L60,180 C55,185 45,185 40,180 Z" fill="%23d4af37" opacity="0.8"/></svg>') no-repeat center center;
+
+            background-size: contain;
+
+        }
+
+        
+
+        .hero h1 {
+
+            font-family: 'Playfair Display', serif;
+
+            font-size: 3.5rem;
+
+            margin-bottom: 30px;
+
+            background: linear-gradient(90deg, var(--gold), var(--electric-blue), var(--electric-pink));
+
+            -webkit-background-clip: text;
+
+            background-clip: text;
+
+            -webkit-text-fill-color: transparent;
+
+            line-height: 1.2;
+
+        }
+
+        
+
+        .hero-btns {
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 20px;
+
+            margin-bottom: 50px;
+
+        }
+
+        
+
+        .btn {
+
+            padding: 12px 30px;
+
+            border-radius: 30px;
+
+            font-weight: 700;
+
+            text-decoration: none;
+
+            transition: all 0.3s ease;
+
+            display: inline-block;
+
+        }
+
+        
+
+        .btn-primary {
+
+            background: linear-gradient(90deg, var(--electric-pink), var(--electric-blue));
+
+            color: white;
+
+            box-shadow: 0 0 20px rgba(0, 204, 255, 0.5);
+
+        }
+
+        
+
+        .btn-secondary {
+
+            background: transparent;
+
+            color: var(--gold);
+
+            border: 2px solid var(--gold);
+
+        }
+
+        
+
+        .btn:hover {
+
+            transform: translateY(-5px);
+
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+
+        }
+
+        
+
+        .stats-container {
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 40px;
+
+            flex-wrap: wrap;
+
+            margin-top: 30px;
+
+        }
+
+        
+
+        .stat-box {
+
+            background: rgba(255, 255, 255, 0.05);
+
+            backdrop-filter: blur(10px);
+
+            border: 1px solid rgba(212, 175, 55, 0.3);
+
+            border-radius: 15px;
+
+            padding: 20px 30px;
+
+            min-width: 200px;
+
+            text-align: center;
+
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+        }
+
+        
+
+        .stat-value {
+
+            font-size: 2rem;
+
+            font-weight: 700;
+
+            color: var(--gold);
+
+            margin-bottom: 5px;
+
+        }
+
+        
+
+        .stat-label {
+
+            color: var(--text-gray);
+
+            font-size: 0.9rem;
+
+        }
+
+        
+
+        /* Sections Common Styles */
+
+        section {
+
+            padding: 100px 0;
+
+            position: relative;
+
+        }
+
+        
+
+        .section-title {
+
+            font-family: 'Playfair Display', serif;
+
+            font-size: 2.5rem;
+
+            text-align: center;
+
+            margin-bottom: 60px;
+
+            position: relative;
+
+        }
+
+        
+
+        .section-title::after {
+
+            content: '';
+
+            display: block;
+
+            width: 80px;
+
+            height: 3px;
+
+            background: var(--gold);
+
+            margin: 15px auto;
+
+            border-radius: 3px;
+
+        }
+
+        
+
+        /* About Section */
+
+        .about-content {
+
+            max-width: 800px;
+
+            margin: 0 auto;
+
+            text-align: center;
+
+            font-size: 1.1rem;
+
+            line-height: 1.8;
+
+            margin-bottom: 50px;
+
+        }
+
+        
+
+        .founders {
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 40px;
+
+            flex-wrap: wrap;
+
+            margin-top: 50px;
+
+        }
+
+        
+
+        .founder-card {
+
+            background: rgba(255, 255, 255, 0.05);
+
+            backdrop-filter: blur(10px);
+
+            border: 1px solid rgba(212, 175, 55, 0.3);
+
+            border-radius: 15px;
+
+            padding: 30px;
+
+            width: 250px;
+
+            text-align: center;
+
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+            transition: transform 0.3s ease;
+
+        }
+
+        
+
+        .founder-card:hover {
+
+            transform: translateY(-10px);
+
+        }
+
+        
+
+        .founder-img {
+
+            width: 120px;
+
+            height: 120px;
+
+            border-radius: 50%;
+
+            background: linear-gradient(135deg, var(--electric-blue), var(--electric-pink));
+
+            margin: 0 auto 20px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 3rem;
+
+            color: white;
+
+        }
+
+        
+
+        .quote {
+
+            font-style: italic;
+
+            color: var(--gold);
+
+            margin-top: 20px;
+
+            font-size: 1.1rem;
+
+        }
+
+        
+
+        /* Tokenomics Section */
+
+        .tokenomics-container {
+
+            display: flex;
+
+            gap: 40px;
+
+            align-items: center;
+
+            flex-wrap: wrap;
+
+        }
+
+        
+
+        .tokenomics-chart {
+
+            flex: 1;
+
+            min-width: 300px;
+
+            height: 300px;
+
+            position: relative;
+
+        }
+
+        
+
+        .chart-center {
+
+            position: absolute;
+
+            top: 50%;
+
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            text-align: center;
+
+        }
+
+        
+
+        .chart-center h3 {
+
+            font-size: 1.8rem;
+
+            color: var(--gold);
+
+            margin-bottom: 10px;
+
+        }
+
+        
+
+        .tokenomics-info {
+
+            flex: 1;
+
+            min-width: 300px;
+
+        }
+
+        
+
+        .tokenomics-list {
+
+            list-style: none;
+
+        }
+
+        
+
+        .tokenomics-list li {
+
+            padding: 15px 0;
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+            display: flex;
+
+            justify-content: space-between;
+
+        }
+
+        
+
+        .highlight-box {
+
+            background: rgba(212, 175, 55, 0.1);
+
+            border: 1px solid var(--gold);
+
+            border-radius: 10px;
+
+            padding: 20px;
+
+            margin-top: 30px;
+
+            text-align: center;
+
+        }
+
+        
+
+        /* Roadmap Section */
+
+        .roadmap-container {
+
+            display: flex;
+
+            flex-direction: column;
+
+            gap: 60px;
+
+            position: relative;
+
+            max-width: 800px;
+
+            margin: 0 auto;
+
+        }
+
+        
+
+        .roadmap-container::before {
+
+            content: '';
+
+            position: absolute;
+
+            top: 0;
+
+            bottom: 0;
+
+            left: 50%;
+
+            width: 4px;
+
+            background: var(--gold);
+
+            transform: translateX(-50%);
+
+        }
+
+        
+
+        .roadmap-item {
+
+            width: calc(50% - 40px);
+
+            position: relative;
+
+            padding: 30px;
+
+            background: rgba(255, 255, 255, 0.05);
+
+            backdrop-filter: blur(10px);
+
+            border: 1px solid rgba(212, 175, 55, 0.3);
+
+            border-radius: 15px;
+
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+
+            transition: all 0.3s ease;
+
+        }
+
+        
+
+        .roadmap-item:hover {
+
+            transform: translateY(-10px);
+
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+
+        }
+
+        
+
+        .roadmap-item:nth-child(odd) {
+
+            align-self: flex-start;
+
+        }
+
+        
+
+        .roadmap-item:nth-child(even) {
+
+            align-self: flex-end;
+
+        }
+
+        
+
+        .roadmap-item::before {
+
+            content: '';
+
+            position: absolute;
+
+            top: 50%;
+
+            width: 20px;
+
+            height: 20px;
+
+            border-radius: 50%;
+
+            background: var(--gold);
+
+            transform: translateY(-50%);
+
+        }
+
+        
+
+        .roadmap-item:nth-child(odd)::before {
+
+            right: -50px;
+
+        }
+
+        
+
+        .roadmap-item:nth-child(even)::before {
+
+            left: -50px;
+
+        }
+
+        
+
+        .roadmap-title {
+
+            color: var(--gold);
+
+            font-size: 1.5rem;
+
+            margin-bottom: 15px;
+
+        }
+
+        
+
+        /* NFTs Section */
+
+        .nft-gallery {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+
+            gap: 30px;
+
+            margin-top: 40px;
+
+        }
+
+        
+
+        .nft-card {
+
+            background: rgba(255, 255, 255, 0.05);
+
+            backdrop-filter: blur(10px);
+
+            border: 1px solid rgba(212, 175, 55, 0.3);
+
+            border-radius: 15px;
+
+            overflow: hidden;
+
+            transition: all 0.3s ease;
+
+            position: relative;
+
+        }
+
+        
+
+        .nft-card:hover {
+
+            transform: translateY(-10px);
+
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+
+        }
+
+        
+
+        .nft-img {
+
+            width: 100%;
+
+            height: 250px;
+
+            background: linear-gradient(135deg, var(--electric-blue), var(--electric-pink));
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            font-size: 5rem;
+
+            color: white;
+
+        }
+
+        
+
+        .nft-info {
+
+            padding: 20px;
+
+        }
+
+        
+
+        .nft-name {
+
+            font-size: 1.3rem;
+
+            margin-bottom: 10px;
+
+            color: var(--gold);
+
+        }
+
+        
+
+        .rarity {
+
+            display: inline-block;
+
+            padding: 5px 10px;
+
+            background: rgba(212, 175, 55, 0.2);
+
+            border-radius: 20px;
+
+            font-size: 0.8rem;
+
+            color: var(--gold);
+
+        }
+
+        
+
+        .mint-btn-container {
+
+            text-align: center;
+
+            margin-top: 50px;
+
+        }
+
+        
+
+        /* Footer */
+
+        footer {
+
+            background: rgba(10, 10, 20, 0.9);
+
+            padding: 60px 0 30px;
+
+            border-top: 1px solid rgba(212, 175, 55, 0.3);
+
+        }
+
+        
+
+        .footer-content {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            flex-wrap: wrap;
+
+            gap: 40px;
+
+            margin-bottom: 40px;
+
+        }
+
+        
+
+        .footer-column {
+
+            flex: 1;
+
+            min-width: 200px;
+
+        }
+
+        
+
+        .footer-title {
+
+            font-size: 1.3rem;
+
+            color: var(--gold);
+
+            margin-bottom: 20px;
+
+        }
+
+        
+
+        .social-links {
+
+            display: flex;
+
+            gap: 15px;
+
+            margin-top: 20px;
+
+        }
+
+        
+
+        .social-link {
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            width: 40px;
+
+            height: 40px;
+
+            border-radius: 50%;
+
+            background: rgba(255, 255, 255, 0.1);
+
+            color: var(--gold);
+
+            transition: all 0.3s ease;
+
+            text-decoration: none;
+
+        }
+
+        
+
+        .social-link:hover {
+
+            background: var(--gold);
+
+            color: var(--dark-bg);
+
+            transform: translateY(-5px);
+
+        }
+
+        
+
+        .footer-bottom {
+
+            text-align: center;
+
+            padding-top: 30px;
+
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+            color: var(--text-gray);
+
+            font-size: 0.9rem;
+
+        }
+
+        
+
+        .signature {
+
+            font-family: 'Playfair Display', serif;
+
+            font-size: 1.2rem;
+
+            color: var(--gold);
+
+            margin-top: 10px;
+
+        }
+
+        
+
+        /* Responsive Design */
+
+        @media (max-width: 768px) {
+
+            .header-container {
+
+                flex-direction: column;
+
+                gap: 20px;
+
+            }
+
+            
+
+            .hero h1 {
+
+                font-size: 2.5rem;
+
+            }
+
+            
+
+            .hero-btns {
+
+                flex-direction: column;
+
+                align-items: center;
+
+            }
+
+            
+
+            .roadmap-container::before {
+
+                left: 20px;
+
+            }
+
+            
+
+            .roadmap-item {
+
+                width: calc(100% - 60px);
+
+                margin-left: 40px;
+
+            }
+
+            
+
+            .roadmap-item:nth-child(odd)::before,
+
+            .roadmap-item:nth-child(even)::before {
+
+                left: -40px;
+
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Coin Animation Elements -->
+
+    <div class="coin-animation" style="top: 20%; left: 10%;"></div>
+
+    <div class="coin-animation" style="top: 40%; left: 85%;"></div>
+
+    <div class="coin-animation" style="top: 70%; left: 15%;"></div>
+
+    <div class="coin-animation" style="top: 90%; left: 75%;"></div>
+
+    
+
+    <!-- Header -->
+
+    <header>
+
+        <div class="container header-container">
+
+            <div class="logo">
+
+                <div class="logo-icon">
+
+                    <i class="fas fa-wine-bottle"></i>
+
+                </div>
+
+                <div class="logo-text">MOET CHAINCOIN</div>
+
+            </div>
+
+            <nav class="nav-menu">
+
+                <a href="#about" class="nav-link">About</a>
+
+                <a href="#tokenomics" class="nav-link">Tokenomics</a>
+
+                <a href="#roadmap" class="nav-link">Roadmap</a>
+
+                <a href="#nfts" class="nav-link">NFTs</a>
+
+                <a href="#events" class="nav-link">Events</a>
+
+            </nav>
+
+            <button class="wallet-btn">
+
+                <i class="fas fa-wallet"></i> Connect Wallet
+
+            </button>
+
+        </div>
+
+    </header>
+
+    
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <div class="container">
+
+            <div class="bottle-animation">
+
+                <!-- Bottle animation placeholder -->
+
+            </div>
+
+            <h1>Where Luxury Pops & Blockchain Never Stops</h1>
+
+            <div class="hero-btns">
+
+                <a href="#" class="btn btn-primary">BUY $MOET NOW</a>
+
+                <a href="#" class="btn btn-secondary">Whitepaper</a>
+
+            </div>
+
+            <div class="stats-container">
+
+                <div class="stat-box">
+
+                    <div class="stat-value">$0.0045</div>
+
+                    <div class="stat-label">Current Price</div>
+
+                </div>
+
+                <div class="stat-box">
+
+                    <div class="stat-value">5,240</div>
+
+                    <div class="stat-label">Holders</div>
+
+                </div>
+
+                <div class="stat-box">
+
+                    <div class="stat-value">$420K</div>
+
+                    <div class="stat-label">Liquidity</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    
+
+    <!-- About Section -->
+
+    <section id="about">
+
+        <div class="container">
+
+            <h2 class="section-title">$MOET Lore</h2>
+
+            <div class="about-content">
+
+                <p>"Criada da fusão entre o algoritmo de Satoshi e o espírito de Moët, a Moet Chaincoin é a primeira memecoin do mundo a brindar com estilo."</p>
+
+            </div>
+
+            <div class="founders">
+
+                <div class="founder-card">
+
+                    <div class="founder-img">
+
+                        <i class="fas fa-crown"></i>
+
+                    </div>
+
+                    <h3>Satoshienne</h3>
+
+                    <p>Co-Founder</p>
+
+                    <div class="quote">"I don't chase pumps. I sip $MOET."</div>
+
+                </div>
+
+                <div class="founder-card">
+
+                    <div class="founder-img">
+
+                        <i class="fas fa-gem"></i>
+
+                    </div>
+
+                    <h3>Vitalique</h3>
+
+                    <p>Co-Founder</p>
+
+                    <div class="quote">"My champagne glass is my hardware wallet."</div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    
+
+    <!-- Tokenomics Section -->
+
+    <section id="tokenomics" style="background: rgba(15, 15, 35, 0.7);">
+
+        <div class="container">
+
+            <h2 class="section-title">Tokenomics</h2>
+
+            <div class="tokenomics-container">
+
+                <div class="tokenomics-chart">
+
+                    <!-- Chart would be implemented with JS -->
+
+                    <div class="chart-center">
+
+                        <h3>1B $MOET</h3>
+
+                        <p>Total Supply</p>
+
+                    </div>
+
+                </div>
+
+                <div class="tokenomics-info">
+
+                    <ul class="tokenomics-list">
+
+                        <li>
+
+                            <span>Community</span>
+
+                            <span>85%</span>
+
+                        </li>
+
+                        <li>
+
+                            <span>Events VIP & Marketing</span>
+
+                            <span>10%</span>
+
+                        </li>
+
+                        <li>
+
+                            <span>Team (vesting)</span>
+
+                            <span>5%</span>
+
+                        </li>
+
+                    </ul>
+
+                    <div class="highlight-box">
+
+                        <h3>Taxes</h3>
+
+                        <p>0% Buy | 2% Sell (1% Liquidity, 1% Gala Fund)</p>
+
+                    </div>
+
+                    <div class="highlight-box" style="margin-top: 20px;">
+
+                        <h3>Fair Launch</h3>
+
+                        <p>No Presale | 100% Transparent</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    
+
+    <!-- Roadmap Section -->
+
+    <section id="roadmap">
+
+        <div class="container">
+
+            <h2 class="section-title">Roadmap</h2>
+
+            <div class="roadmap-container">
+
+                <div class="roadmap-item">
+
+                    <h3 class="roadmap-title">Entrada</h3>
+
+                    <p>Lançamento e campanha de memes</p>
+
+                    <p>Primeiras parcerias de luxo</p>
+
+                    <p>Listagem em DEXs</p>
+
+                </div>
+
+                <div class="roadmap-item">
+
+                    <h3 class="roadmap-title">Prato Principal</h3>
+
+                    <p>Coleção NFTs de garrafas digitais</p>
+
+                    <p>Eventos exclusivos para holders</p>
+
+                    <p>Expansão da comunidade global</p>
+
+                </div>
+
+                <div class="roadmap-item">
+
+                    <h3 class="roadmap-title">Sobremesa</h3>
+
+                    <p>Eventos reais em Ibiza, Paris, Dubai</p>
+
+                    <p>Integração com metaverso</p>
+
+                    <p>Merchandising de luxo</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    
+
+    <!-- NFTs Section -->
+
+    <section id="nfts" style="background: rgba(15, 15, 35, 0.7);">
+
+        <div class="container">
+
+            <h2 class="section-title">NFTs & Mint</h2>
+
+            <div class="nft-gallery">
+
+                <div class="nft-card">
+
+                    <div class="nft-img">
+
+                        <i class="fas fa-wine-bottle"></i>
+
+                    </div>
+
+                    <div class="nft-info">
+
+                        <h3 class="nft-name">Brut Classique</h3>
+
+                        <span class="rarity">Comum</span>
+
+                    </div>
+
+                </div>
+
+                <div class="nft-card">
+
+                    <div class="nft-img">
+
+                        <i class="fas fa-wine-bottle"></i>
+
+                    </div>
+
+                    <div class="nft-info">
+
+                        <h3 class="nft-name">Rosé Impérial</h3>
+
+                        <span class="rarity">Raro</span>
+
+                    </div>
+
+                </div>
+
+                <div class="nft-card">
+
+                    <div class="nft-img">
+
+                        <i class="fas fa-wine-bottle"></i>
+
+                    </div>
+
+                    <div class="nft-info">
+
+                        <h3 class="nft-name">Grand Vintage</h3>
+
+                        <span class="rarity">Épico</span>
+
+                    </div>
+
+                </div>
+
+                <div class="nft-card">
+
+                    <div class="nft-img">
+
+                        <i class="fas fa-wine-bottle"></i>
+
+                    </div>
+
+                    <div class="nft-info">
+
+                        <h3 class="nft-name">Ultra Brut Meta</h3>
+
+                        <span class="rarity">Lendário</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="mint-btn-container">
+
+                <a href="#" class="btn btn-primary">MINT YOUR BOTTLE</a>
+
+            </div>
+
+            <div style="text-align: center; margin-top: 40px; max-width: 800px; margin: 40px auto 0;">
+
+                <h3>Benefícios</h3>
+
+                <div style="disp
+
